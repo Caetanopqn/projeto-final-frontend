@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(19, 7, 87);
+}
+
+.container {
+    width: 420px;
+    background-color: rgb(255, 255, 255);
+    border: 2px;
+    border-radius: 10px;
+    color: rgb(88, 64, 223);
+    padding: 20px 20px;
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(88, 64, 223);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.2s;
+    color: white;
+    padding-left: 10px;
+}
+
+.input-box input:hover {
+    background-color: rgb(159, 64, 223);
+}
+
+.input-box input::placeholder {
+    position: absolute;
+    color: rgb(255, 255, 255, 0.5);
+    left: 10px;
+    transition: 0.2s;
+
+}
+
+.input-box input:hover::placeholder {
+    color: rgba(255, 255, 255);
+    left: 15px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    color: white;
+}
+
+.lembrar-esqueci {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lembrar-esqueci label input{
+    accent-color: rgb(88, 64, 223);
+    margin-right: 3px;
+    margin-left: 8px;
+}
+
+.lembrar-esqueci a {
+    text-decoration: none;
+    color: rgb(88, 64, 223);
+    margin-right: 8px;
+}
+
+.lembrar-esqueci a:hover {
+    text-decoration: underline;
+}
+
+.login{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(88, 64, 223);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin-top: 18px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.login:hover{
+    background-color: rgb(159, 64, 223);
+    font-size: 20px;
+}
