@@ -14,7 +14,7 @@
         rel="stylesheet">
     <!--Importando fontes-->
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
 
     <title>Login</title>
 </head>
@@ -25,12 +25,12 @@
             <h1>Login</h1>
 
             <div class="input-box"> <!--Email-->
-                <input placeholder="Email" type="email">
+                <input placeholder="Email" type="email" required>
                 <i class="bx bxs-user"></i>
             </div>
 
             <div class="input-box"> <!--Senha-->
-                <input placeholder="Senha" type="password">
+                <input placeholder="Senha" type="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
 
@@ -44,6 +44,8 @@
             </div>
 
             <button type="submit" class="login">Login</button>
+
+            <script src="js/login.js"></script>
 
         </form>
     </main>
