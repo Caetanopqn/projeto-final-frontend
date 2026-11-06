@@ -37,23 +37,108 @@
     </div>
 
     <main id="main">
-
-        <section class="cards">
-
         <h1>Dashboard</h1>
 
-        <div class="container">
-            <h2 class="text-top">Em progresso:</h2>
-            <h2 class="text-bottom">4 Lições</h2>
-        </div>
+        <!-- Linha de 3 cards de resumo -->
+        <section class="cards">
+            <div class="container">
+                <h2 class="text-top">Em progresso:</h2>
+                <h2 class="text-bottom">4 Lições</h2>
+            </div>
 
-         <div class="container">
-            <h2 class="text-top">Concluídas:</h2>
-            <h2 class="text-bottom">8 Lições</h2>
-        </div>
+            <div class="container">
+                <h2 class="text-top">Concluídas:</h2>
+                <h2 class="text-bottom">8 Lições</h2>
+            </div>
+
+            <div class="container">
+                <h2 class="text-top">Conquistas:</h2>
+                <h2 class="text-bottom">12</h2>
+            </div>
+        </section>
+
+        <!-- Gráfico + Performance lado a lado -->
+        <section class="painel">
+
+            <div class="container grafico">
+                <div class="grafico-topo">
+                    <div>
+                        <h3>Horas gastas</h3>
+                        <p class="total">126h 48m</p>
+                    </div>
+                    <span class="periodo">Últimos 7 dias</span>
+                </div>
+
+                <div class="barras">
+                    <div class="barra-item">
+                        <div class="barra" style="--h: 55%"></div>
+                        <span>Seg</span>
+                    </div>
+                    <div class="barra-item">
+                        <div class="barra" style="--h: 35%"></div>
+                        <span>Ter</span>
+                    </div>
+                    <div class="barra-item">
+                        <div class="barra" style="--h: 80%"></div>
+                        <span>Qua</span>
+                    </div>
+                    <div class="barra-item">
+                        <div class="barra" style="--h: 45%"></div>
+                        <span>Qui</span>
+                    </div>
+                    <div class="barra-item">
+                        <div class="barra destaque" style="--h: 70%"></div>
+                        <span>Sex</span>
+                    </div>
+                    <div class="barra-item">
+                        <div class="barra" style="--h: 30%"></div>
+                        <span>Sáb</span>
+                    </div>
+                    <div class="barra-item">
+                        <div class="barra" style="--h: 50%"></div>
+                        <span>Dom</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container performance">
+                <h3>Performance</h3>
+
+                <p class="percentual">72%</p>
+                <p class="legenda">Concluído</p>
+
+                <progress class="barra-progresso" value="72" max="100">72%</progress>
+
+                <p class="meta">Sua meta diária está quase concluída!</p>
+                <button class="btn btn-principal">Mais detalhes</button>
+            </div>
 
         </section>
 
+        <!-- Cursos em andamento -->
+        <section class="container cursos">
+            <h3>Meus cursos</h3>
+
+            <div class="curso">
+                <div class="curso-info">
+                    <h4>Web Design</h4>
+                    <p>10 lições</p>
+                </div>
+                <progress class="barra-progresso" value="50" max="100">50%</progress>
+                <span class="curso-percentual">50%</span>
+                <button class="btn">Continuar</button>
+            </div>
+
+            <div class="curso">
+                <div class="curso-info">
+                    <h4>Prototipagem</h4>
+                    <p>7 lições</p>
+                </div>
+                <progress class="barra-progresso" value="27" max="100">27%</progress>
+                <span class="curso-percentual">27%</span>
+                <button class="btn">Continuar</button>
+            </div>
+        </section>
     </main>
 
 </body>
