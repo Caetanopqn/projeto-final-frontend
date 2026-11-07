@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/painel.css">
+    <link rel="stylesheet" href="/css/trilhas.css">
+
+    <title>DevCompass - Trilhas</title>
+</head>
+
+<body>
+
+    <div id="menu">
+
+        <img id="logo" src="../imagem/Logo_pixelado_DevCompass-removebg-preview.png" width="250">
+
+        <ul>
+            <li class="not-selected"><a href="painel.html">Dashboard</a></li>
+            <li class="selected">Trilhas</li>
+            <li class="not-selected"><a href="vitoria-regia.html">Vitória-régia</a></li>
+            <li class="not-selected"><a href="ipe-amarelo.html">Ipê-amarelo</a></li>
+            <li class="not-selected"><a href="mandacaru.html">Mandacaru</a></li>
+        </ul>
+    </div>
+
+    <main id="main">
+        <h1>Trilhas</h1>
+        <p class="subtitulo">Escolha uma área e depois a trilha que você quer seguir.</p>
+
+        <div id="filtro">
+
+            <!-- Seletor de área -->
+            <section class="seletor">
+                <input type="radio" name="area" id="area-web" checked>
+                <label for="area-web"><i class='bx bx-code-alt'></i> Desenvolvimento Web</label>
+
+                <input type="radio" name="area" id="area-dados">
+                <label for="area-dados"><i class='bx bx-bar-chart-alt-2'></i> Dados e IA</label>
+
+                <input type="radio" name="area" id="area-ciber">
+                <label for="area-ciber"><i class='bx bx-shield-quarter'></i> Cibersegurança</label>
+            </section>
+
+            <!-- Trilhas -->
+            <section class="trilhas">
+
+                <!-- ===== Web ===== -->
+                <article class="container trilha" data-area="web">
+                    <div class="trilha-topo">
+                        <div class="icone"><i class='bx bx-code-alt'></i></div>
+                        <span class="nivel iniciante">Iniciante</span>
+                    </div>
+                    <h3>Fundamentos de Front-end</h3>
+                    <p>HTML, CSS e JavaScript básico para montar suas primeiras páginas.</p>
+                    <p class="meta">
+                        <span><i class='bx bx-time-five'></i> 40h</span>
+                        <span><i class='bx bx-book-open'></i> 6 cursos</span>
+                    </p>
+                    <div class="progresso">
+                        <progress class="barra-progresso" value="50" max="100">50%</progress>
+                        <span>50%</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Continuar trilha</a>
+                </article>
+
+                <article class="container trilha" data-area="web">
+                    <div class="trilha-topo">
+                        <div class="icone"><i class='bx bx-server'></i></div>
+                        <span class="nivel intermediario">Intermediário</span>
+                    </div>
+                    <h3>Back-end com Node.js</h3>
+                    <p>Crie APIs, conecte a um banco de dados e publique seu projeto.</p>
+                    <p class="meta">
+                        <span><i class='bx bx-time-five'></i> 60h</span>
+                        <span><i class='bx bx-book-open'></i> 8 cursos</span>
+                    </p>
+                    <div class="progresso">
+                        <progress class="barra-progresso" value="0" max="100">0%</progress>
+                        <span>0%</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar trilha</a>
+                </article>
+
+                <!-- ===== Dados e IA ===== -->
+                <article class="container trilha" data-area="dados">
+                    <div class="trilha-topo">
+                        <div class="icone"><i class='bx bxl-python'></i></div>
+                        <span class="nivel iniciante">Iniciante</span>
+                    </div>
+                    <h3>Python para Dados</h3>
+                    <p>Lógica de programação, bibliotecas de análise e primeiros gráficos.</p>
+                    <p class="meta">
+                        <span><i class='bx bx-time-five'></i> 45h</span>
+                        <span><i class='bx bx-book-open'></i> 7 cursos</span>
+                    </p>
+                    <div class="progresso">
+                        <progress class="barra-progresso" value="0" max="100">0%</progress>
+                        <span>0%</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar trilha</a>
+                </article>
+
+                <article class="container trilha" data-area="dados">
+                    <div class="trilha-topo">
+                        <div class="icone"><i class='bx bx-data'></i></div>
+                        <span class="nivel intermediario">Intermediário</span>
+                    </div>
+                    <h3>SQL e Bancos de Dados</h3>
+                    <p>Consultas, modelagem e boas práticas para trabalhar com dados.</p>
+                    <p class="meta">
+                        <span><i class='bx bx-time-five'></i> 30h</span>
+                        <span><i class='bx bx-book-open'></i> 5 cursos</span>
+                    </p>
+                    <div class="progresso">
+                        <progress class="barra-progresso" value="27" max="100">27%</progress>
+                        <span>27%</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Continuar trilha</a>
+                </article>
+
+                <!-- ===== Cibersegurança ===== -->
+                <article class="container trilha" data-area="ciber">
+                    <div class="trilha-topo">
+                        <div class="icone"><i class='bx bx-network-chart'></i></div>
+                        <span class="nivel iniciante">Iniciante</span>
+                    </div>
+                    <h3>Redes e Linux</h3>
+                    <p>Como funcionam as redes e como usar o terminal no dia a dia.</p>
+                    <p class="meta">
+                        <span><i class='bx bx-time-five'></i> 35h</span>
+                        <span><i class='bx bx-book-open'></i> 5 cursos</span>
+                    </p>
+                    <div class="progresso">
+                        <progress class="barra-progresso" value="0" max="100">0%</progress>
+                        <span>0%</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar trilha</a>
+                </article>
+
+                <article class="container trilha" data-area="ciber">
+                    <div class="trilha-topo">
+                        <div class="icone"><i class='bx bx-lock-alt'></i></div>
+                        <span class="nivel intermediario">Intermediário</span>
+                    </div>
+                    <h3>Segurança de Aplicações</h3>
+                    <p>Principais vulnerabilidades web e como evitá-las no seu código.</p>
+                    <p class="meta">
+                        <span><i class='bx bx-time-five'></i> 50h</span>
+                        <span><i class='bx bx-book-open'></i> 6 cursos</span>
+                    </p>
+                    <div class="progresso">
+                        <progress class="barra-progresso" value="0" max="100">0%</progress>
+                        <span>0%</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar trilha</a>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
