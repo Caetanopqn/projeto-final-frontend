@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--Importando ícones-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Importando fontes-->
+
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/painel.css">
+    <link rel="stylesheet" href="/css/projetos.css">
+
+    <title>DevCompass - Projetos</title>
+</head>
+
+<body>
+
+    <div id="menu">
+
+        <img id="logo" src="../imagem/Logo_pixelado_DevCompass-removebg-preview.png" width="250">
+
+        <ul>
+            <li class="not-selected"><a href="painel.html">Dashboard</a></li>
+            <li class="not-selected"><a href="trilhas.html">Trilhas</a></li>
+            <li class="selected">Projetos</li>
+        </ul>
+    </div>
+
+    <main id="main">
+        <h1>Projetos para o portfólio</h1>
+
+        <div id="filtro">
+
+            <!-- Seletor de área -->
+            <section class="seletor">
+                <input type="radio" name="area" id="area-todas" checked>
+                <label for="area-todas"><i class='bx bx-grid-alt'></i> Todas</label>
+
+                <input type="radio" name="area" id="area-web">
+                <label for="area-web"><i class='bx bx-code-alt'></i> Desenvolvimento Web</label>
+
+                <input type="radio" name="area" id="area-dados">
+                <label for="area-dados"><i class='bx bx-bar-chart-alt-2'></i> Dados e IA</label>
+
+                <input type="radio" name="area" id="area-ciber">
+                <label for="area-ciber"><i class='bx bx-shield-quarter'></i> Cibersegurança</label>
+            </section>
+
+            <!-- Projetos -->
+            <section class="projetos">
+
+                <!-- ===== Web ===== -->
+                <article class="container projeto" data-area="web">
+                    <div class="projeto-topo">
+                        <span class="nivel iniciante">Iniciante</span>
+                    </div>
+                    <h3>Site de portfólio pessoal</h3>
+                    <p>Uma página sobre você, com apresentação, projetos e contato. Ótimo para praticar layout
+                        responsivo.</p>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Responsividade</li>
+                    </ul>
+                    <div class="detalhes">
+                        <span><i class='bx bx-time-five'></i> 1 semana</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar projeto</a>
+                </article>
+
+                <article class="container projeto" data-area="web">
+                    <div class="projeto-topo">
+                        <span class="nivel iniciante">Iniciante</span>
+                    </div>
+                    <h3>Lista de tarefas</h3>
+                    <p>Adicione, conclua e remova tarefas, com os dados salvos no navegador.</p>
+                    <ul class="tags">
+                        <li>JavaScript</li>
+                        <li>DOM</li>
+                        <li>localStorage</li>
+                    </ul>
+                    <div class="detalhes">
+                        <span><i class='bx bx-time-five'></i> 1 a 2 semanas</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar projeto</a>
+                </article>
+
+                <article class="container projeto" data-area="web">
+                    <div class="projeto-topo">
+                        <span class="nivel intermediario">Intermediário</span>
+                    </div>
+                    <h3>API de blog com banco de dados</h3>
+                    <p>Crie uma API para cadastrar, listar, editar e apagar posts, com login de usuários.</p>
+                    <ul class="tags">
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                        <li>Autenticação</li>
+                    </ul>
+                    <div class="detalhes">
+                        <span><i class='bx bx-time-five'></i> 3 a 4 semanas</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar projeto</a>
+                </article>
+
+                <!-- ===== Dados e IA ===== -->
+                <article class="container projeto" data-area="dados">
+                    <div class="projeto-topo">
+                        <span class="nivel iniciante">Iniciante</span>
+                    </div>
+                    <h3>Análise de um conjunto de dados público</h3>
+                    <p>Escolha um tema que você goste, limpe os dados e conte o que descobriu com gráficos.</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>Gráficos</li>
+                    </ul>
+                    <div class="detalhes">
+                        <span><i class='bx bx-time-five'></i> 2 semanas</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar projeto</a>
+                </article>
+
+                <article class="container projeto" data-area="dados">
+                    <div class="projeto-topo">
+                        <span class="nivel intermediario">Intermediário</span>
+                    </div>
+                    <h3>Dashboard de vendas</h3>
+                    <p>Monte um painel com indicadores e filtros a partir de uma base de vendas fictícia.</p>
+                    <ul class="tags">
+                        <li>SQL</li>
+                        <li>Power BI</li>
+                        <li>Indicadores</li>
+                    </ul>
+                    <div class="detalhes">
+                        <span><i class='bx bx-time-five'></i> 2 a 3 semanas</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar projeto</a>
+                </article>
+
+                <!-- ===== Cibersegurança ===== -->
+                <article class="container projeto" data-area="ciber">
+                    <div class="projeto-topo">
+                        <span class="nivel iniciante">Iniciante</span>
+                    </div>
+                    <h3>Verificador de força de senha</h3>
+                    <p>Um programa que avalia uma senha e explica o que deixa ela fraca ou forte.</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Boas práticas</li>
+                        <li>Expressões regulares</li>
+                    </ul>
+                    <div class="detalhes">
+                        <span><i class='bx bx-time-five'></i> 1 semana</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar projeto</a>
+                </article>
+
+                <article class="container projeto" data-area="ciber">
+                    <div class="projeto-topo">
+                        <span class="nivel intermediario">Intermediário</span>
+                    </div>
+                    <h3>Analisador de logs de acesso</h3>
+                    <p>Leia logs de um servidor e destaque tentativas de login suspeitas em um relatório.</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Linux</li>
+                        <li>Logs</li>
+                    </ul>
+                    <div class="detalhes">
+                        <span><i class='bx bx-time-five'></i> 2 semanas</span>
+                    </div>
+                    <a href="#" class="btn btn-principal">Começar projeto</a>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

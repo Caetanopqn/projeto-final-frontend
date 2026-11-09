@@ -1,0 +1,130 @@
+/* Seletor de área */
+#filtro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seletor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Esconde o radio, mas mantém ele acessível pelo teclado */
+.seletor input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.seletor label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.seletor label:hover {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.seletor input:checked + label {
+    background-color: rgb(88, 64, 223);
+}
+
+/* Filtro: esconde os projetos das outras áreas */
+/* "Todas" não precisa de regra: nada é escondido */
+#filtro:has(#area-web:checked) .projeto:not([data-area="web"]),
+#filtro:has(#area-dados:checked) .projeto:not([data-area="dados"]),
+#filtro:has(#area-ciber:checked) .projeto:not([data-area="ciber"]) {
+    display: none;
+}
+
+/* Grid de projetos */
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+.projeto-topo {
+    display: flex;
+    align-items: center;
+}
+
+.projeto p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Nível */
+.nivel {
+    width: 100%;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nivel.iniciante {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.nivel.intermediario {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+/* Tecnologias */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+}
+
+.tags li {
+    padding: 3px 10px;
+    font-size: 12px;
+    background-color: #f3f4f6;
+    border-radius: 20px;
+}
+
+/* Tempo estimado e entrega */
+.detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: auto;
+}
+
+.detalhes span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: #8a8a8a;
+}
+
+/* Botão em forma de link (<a class="btn">) */
+.projeto .btn {
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}

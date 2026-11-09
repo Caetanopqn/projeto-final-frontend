@@ -28,9 +28,7 @@
         <ul>
             <li class="not-selected"><a href="painel.html">Dashboard</a></li>
             <li class="selected">Trilhas</li>
-            <li class="not-selected"><a href="vitoria-regia.html">Vitória-régia</a></li>
-            <li class="not-selected"><a href="ipe-amarelo.html">Ipê-amarelo</a></li>
-            <li class="not-selected"><a href="mandacaru.html">Mandacaru</a></li>
+            <li class="not-selected"><a href="projetos.html">Projetos</a></li>
         </ul>
     </div>
 
@@ -42,6 +40,9 @@
 
             <!-- Seletor de área -->
             <section class="seletor">
+                <input type="radio" name="area" id="area-todas" checked>
+                <label for="area-todas"><i class='bx bx-grid-alt'></i> Todas</label>
+
                 <input type="radio" name="area" id="area-web" checked>
                 <label for="area-web"><i class='bx bx-code-alt'></i> Desenvolvimento Web</label>
 
@@ -58,7 +59,6 @@
                 <!-- ===== Web ===== -->
                 <article class="container trilha" data-area="web">
                     <div class="trilha-topo">
-                        <div class="icone"><i class='bx bx-code-alt'></i></div>
                         <span class="nivel iniciante">Iniciante</span>
                     </div>
                     <h3>Fundamentos de Front-end</h3>
@@ -76,7 +76,6 @@
 
                 <article class="container trilha" data-area="web">
                     <div class="trilha-topo">
-                        <div class="icone"><i class='bx bx-server'></i></div>
                         <span class="nivel intermediario">Intermediário</span>
                     </div>
                     <h3>Back-end com Node.js</h3>
@@ -95,7 +94,6 @@
                 <!-- ===== Dados e IA ===== -->
                 <article class="container trilha" data-area="dados">
                     <div class="trilha-topo">
-                        <div class="icone"><i class='bx bxl-python'></i></div>
                         <span class="nivel iniciante">Iniciante</span>
                     </div>
                     <h3>Python para Dados</h3>
@@ -113,7 +111,6 @@
 
                 <article class="container trilha" data-area="dados">
                     <div class="trilha-topo">
-                        <div class="icone"><i class='bx bx-data'></i></div>
                         <span class="nivel intermediario">Intermediário</span>
                     </div>
                     <h3>SQL e Bancos de Dados</h3>
@@ -132,7 +129,6 @@
                 <!-- ===== Cibersegurança ===== -->
                 <article class="container trilha" data-area="ciber">
                     <div class="trilha-topo">
-                        <div class="icone"><i class='bx bx-network-chart'></i></div>
                         <span class="nivel iniciante">Iniciante</span>
                     </div>
                     <h3>Redes e Linux</h3>
@@ -150,7 +146,6 @@
 
                 <article class="container trilha" data-area="ciber">
                     <div class="trilha-topo">
-                        <div class="icone"><i class='bx bx-lock-alt'></i></div>
                         <span class="nivel intermediario">Intermediário</span>
                     </div>
                     <h3>Segurança de Aplicações</h3>
