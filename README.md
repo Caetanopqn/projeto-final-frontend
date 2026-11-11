@@ -12,7 +12,7 @@ Site guia para orientar estudantes de TI na preparação para o mercado de traba
 
 O DevCompass funciona como uma bússola para estudantes de Tecnologia da Informação. Ele ajuda a decidir o que estudar, o que desenvolver e o que criar para se preparar para o mercado de trabalho em uma área específica de TI, com foco na busca pelo primeiro estágio.
 
-A plataforma organiza as etapas dessa preparação em trilhas de aprendizagem, projetos para portfólio, checklist de currículo e orientações para entrevistas. Cada uma dessas funcionalidades muda de acordo com a área de TI escolhida pelo usuário.
+A plataforma organiza as etapas dessa preparação em trilhas de aprendizagem e projetos para portfólio. Cada uma dessas funcionalidades muda de acordo com a área de TI escolhida pelo usuário.
 
 O site também permite criar planos de estudo e acompanhar o progresso e as atividades.
 
@@ -23,18 +23,6 @@ O site também permite criar planos de estudo e acompanhar o progresso e as ativ
 - Sugerir projetos que ajudem a criar e ampliar o portfólio.
 - Acompanhar o progresso do estudante em cursos e metas diárias.
 - Aplicar na prática os conceitos de HTML e CSS vistos na disciplina.
-
-## Funcionalidades
-
-| Funcionalidade | Situação |
-| --- | --- |
-| Tela de login | Concluída |
-| Dashboard com resumo, horas gastas, performance e cursos | Concluída |
-| Catálogo de trilhas de aprendizagem | Concluída |
-| Catálogo de projetos para portfólio | Concluída |
-| Checklist de currículo | Planejada |
-| Criador de planos de estudo | Planejada |
-| Catálogo de escolha de área | Incorporado à tela de trilhas |
 
 ## Telas
 
@@ -83,10 +71,8 @@ O filtro por área depende do seletor `:has`, que funciona nas versões atuais d
 
 ## Próximos passos
 
-- Desenvolver o checklist de currículo.
 - Desenvolver o criador de planos de estudo.
 - Criar a página interna de cada trilha, com a lista de cursos.
-- Concluir as páginas de Ipê-amarelo e Mandacaru.
 - Adicionar JavaScript para guardar a área escolhida e o progresso do usuário.
 
 ## Autor
