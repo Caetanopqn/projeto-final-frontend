@@ -3,7 +3,9 @@
 Site guia para orientar estudantes de TI na preparação para o mercado de trabalho.
 
 **Autor:** Caetano Pequeno
+
 **Disciplina:** Desenvolvimento Front-End para web
+
 **Ano:** 2026
 
 ---
@@ -78,4 +80,5 @@ O filtro por área depende do seletor `:has`, que funciona nas versões atuais d
 ## Autor
 
 Caetano Pequeno
+
 Disciplina de Desenvolvimento Front-End para web, 2026.
