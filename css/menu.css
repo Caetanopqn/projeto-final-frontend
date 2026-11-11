@@ -10,7 +10,7 @@ body {
     background-color: rgb(19, 7, 87);
 }
 
-/* MENU LATERAL */
+/* Menu lateral */
 #menu {
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@ body {
     padding: 30px 15px;
 }
 
-/* LOGO */
+/* Logo */
 .logo {
     display: block;
     margin-bottom: 45px;
@@ -37,7 +37,7 @@ body {
     height: auto;
 }
 
-/* NAVEGAÇÃO */
+/* Navegação */
 #menu nav {
     width: 100%;
 }
@@ -51,7 +51,7 @@ body {
     list-style: none;
 }
 
-/* LINKS */
+/* Páginas */
 #menu li.not-selected a {
     display: flex;
     justify-content: center;
@@ -72,12 +72,11 @@ body {
 
 }
 
-/* EFEITO HOVER */
 #menu li.not-selected a:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* PÁGINA INICIAL */
+/* Página inicial */
 #menu li.selected {
     display: flex;
     justify-content: center;
@@ -96,4 +95,23 @@ body {
     border-radius: 10px;
 
     transition: 0.2s ease;
+}
+
+/* Logout */
+
+.logout {
+    padding: 6px 8px;
+    border-radius: 6px;
+    margin-top: auto;
+    background-color: #000000;
+}
+
+.logout a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.logout:hover a {
+    color: rgb(88, 64, 223);
 }
